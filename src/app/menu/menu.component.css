@@ -1,0 +1,54 @@
+/* app-menu.component.css */
+
+.menu-container {
+  padding: 20px;
+  /* Optional: Add some padding around the menu */
+}
+
+.custom-menu-btn {
+  background-color: #518ACD; /* Main blue from your logo */
+  color: #B0C6E1; /* White text */
+  border: 1px solid #4e8177; /* Border matching the background for depth */
+  padding: 12px 25px;
+  margin: 8px 0; /* Space between buttons */
+  font-size: 1.1rem;
+  border-radius: 8px; /* Slightly rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover/active states */
+  min-width: 180px; /* Ensure buttons have a consistent width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.custom-menu-btn:hover {
+  background-color: #4e8177; /* Green-blue from your logo on hover */
+  transform: translateY(-3px); /* Lift button slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  color: #FFF; /* Ensure text remains white */
+  border-color: #518ACD; /* Border changes on hover */
+}
+
+.custom-menu-btn.active-btn {
+  background-color: #4e8177; /* Active button uses the green-blue color */
+  color: #FFF;
+  font-weight: bold;
+  border-color: #518ACD;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2); /* Inner shadow for pressed look */
+  transform: scale(1.02); /* Slightly larger to indicate active */
+  pointer-events: none; /* Prevent clicking an already active button */
+}
+
+/* Style for the icons */
+.custom-menu-btn i {
+  margin-right: 10px;
+  font-size: 1.3rem; /* Slightly larger icons */
+}
+
+/* Ensure consistent spacing for the icon and text */
+.custom-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  --bs-btn-font-family: 'Arima', sans-serif;
+}
