@@ -1,15 +1,19 @@
 :root {
-  --bs-primary: #518ACD; 
-  --bs-primary-rgb:  81, 138, 205;;  /* Main Blue from logo */
-  --bs-secondary: #87b0e2; /* A lighter, desaturated version of your main blue */
+  --bs-primary: #518ACD;
+  --bs-primary-rgb: 81, 138, 205;
+  ;
+  /* Main Blue from logo */
+  --bs-secondary: #87b0e2;
+  /* A lighter, desaturated version of your main blue */
 }
 
 .logo {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: 'Arima';
 }
@@ -23,16 +27,18 @@ html, body {
 .content-card {
   width: 100%;
   max-width: 800px;
-  height: 70vh; /* Set a consistent viewport height for all cards */
-  max-height: 800px; /* Set a maximum pixel height */
+  height: 70vh;
+  /* Set a consistent viewport height for all cards */
+  max-height: 800px;
+  /* Set a maximum pixel height */
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-radius: 15px;
-  
+
   /* Background and Shadow Styles */
   background-color: #518bcd;
-  background-image: 
+  background-image:
     radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
   background-size: 20px 20px;
   border: 1px solid rgba(78, 129, 119, 0.3);
@@ -40,35 +46,77 @@ html, body {
 
   /* This will add a scrollbar if the content inside is too tall */
   overflow-y: auto;
-  
+  overflow-x: hidden;
+
   color: #ecf0f1;
 }
 
-/* Optional: Style the new scrollbar */
-.content-card::-webkit-scrollbar {
-  width: 8px;
-}
-.content-card::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-}
-.content-card::-webkit-scrollbar-thumb {
-  background-color: #518ACD;
-  border-radius: 10px;
-  border: 2px solid #2c3e50;
+.projects-container::-webkit-scrollbar,
+.category-nav::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
 }
 
+.projects-container::-webkit-scrollbar-track,
+.category-nav::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.projects-container::-webkit-scrollbar-thumb,
+.category-nav::-webkit-scrollbar-thumb {
+  background-color: #518ACD;
+  border-radius: 5px;
+  /* padding: 10rem; */
+  border: 1px solid #d0d2d57a;
+}
+
+/* Optional: Style the new scrollbar */
+.scrollable-content::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #518ACD;
+  border-radius: 5px;
+  /* padding: 2rem 2rem 2rem 2rem; */
+  border: 1px solid #d0d2d57a;
+}
+
+.scroll-padding {
+  height: 50vh;
+}
+
+/* In about-me-section.component.css */
+.scrollable-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* This padding creates space on all sides, moving the scrollbar from the edge */
+  /* padding: 2rem;  */
+}
+
+/* Update the card to accommodate the photo */
+/* .content-card {
+  padding-top: 85px; 
+} */
 
 @media (max-width: 767.98px) {
   :host {
-    padding: 2rem; /* Reduce padding on the host for mobile */
+    padding: 2rem;
+    /* Reduce padding on the host for mobile */
   }
+
   .content-card {
     margin-top: 2rem;
   }
 
   .photo-wrapper {
-    margin-top: 0px ;
+    margin-top: 0px;
   }
 
- 
+
 }

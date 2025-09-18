@@ -48,7 +48,7 @@ export class ProjectsSectionComponent implements AfterViewInit {
 
   scrollToCategory(categoryId: string): void {
     const element = document.getElementById(categoryId);
-    element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     this.activeCategory.set(categoryId)
   }
 }

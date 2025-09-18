@@ -70,7 +70,7 @@
 }
 
 .category-section {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .category-title {
@@ -128,10 +128,9 @@
 }
 
 /* --- Custom Scrollbars --- */
-.projects-container::-webkit-scrollbar,
+.scrollable-::-webkit-scrollbar,
 .category-nav::-webkit-scrollbar {
   width: 7px;
-  height: 7px;
 }
 
 .projects-container::-webkit-scrollbar-track,

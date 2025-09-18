@@ -1,17 +1,19 @@
 <div id="about" class="about-wrapper">
-  
+
   <div class="photo-wrapper">
     <img [src]="data.imageUrl" alt="A photo of Sebastian" class="profile-photo">
   </div>
-  
+
   <div class="content-card">
-    <div class="text-content text-center">
-      <h1 class="title">{{ data.title }}</h1>
-      <p class="subtitle">{{ data.subtitle }}</p>
-      <div class="bio-text text-start mt-4">
-        @for (paragraph of data.paragraphs; track $index) {
+    <div class="scrollable-content">
+      <div class="text-content text-center">
+        <h1 class="title">{{ data.title }}</h1>
+        <p class="subtitle">{{ data.subtitle }}</p>
+        <div class="bio-text text-start mt-4">
+          @for (paragraph of data.paragraphs; track $index) {
           <p>{{ paragraph }}</p>
-        }
+          }
+        </div>
       </div>
     </div>
   </div>

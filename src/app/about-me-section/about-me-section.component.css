@@ -111,6 +111,7 @@
 /* All other text styles (.title, .subtitle, etc.) remain the same */
 .text-content {
   /* Styles for the text inside the card */
+  padding: 0 1rem;
 }
 
 @media (max-width: 767.98px) {

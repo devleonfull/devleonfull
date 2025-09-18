@@ -1,22 +1,41 @@
 <div id="contact" class="content-card animate__animated animate__fadeIn">
-  <div class="card-content text-center">
-    
-    <h1 class="title">Get In Touch</h1>
-    <p class="subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-    
-    <ul class="contact-list list-unstyled mt-4">
-      @for (method of contactMethods; track method.type) {
-        <li class="contact-item">
-          <a [href]="method.url" target="_blank" [class.no-link]="!method.url">
-            <i class="bi {{ method.iconClass }}"></i>
-            <div class="contact-info">
-              <span class="contact-type">{{ method.type }}</span>
-              <span class="contact-value">{{ method.value }}</span>
-            </div>
-          </a>
-        </li>
-      }
-    </ul>
+    <div class="card-content text-center d-flex flex-column align-items-center text-center">
 
-  </div>
+        <h1 class="title">Get In Touch</h1>
+        <p class="subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part
+            of your vision.</p>
+
+        <!-- <div class="row d-flex justify-content-center h-100"> -->
+        <!-- <div class="col-1"></div> -->
+        <!-- <div class="col-md-12"> -->
+        <ul class="contact-list list-unstyled mt-4 pt-4">
+            <div class="row d-flex">
+                @for (method of contactMethods; track method.type) {
+                <div class="col-md-1 col-3"></div>
+                <div class="col-md-4 col-6">
+                    <li class="contact-item">
+                        <a [href]="method.url" target="_blank" [class.no-link]="!method.url"
+                            class="justify-content-start">
+                            <i class="bi {{ method.iconClass }}"></i>
+                            <div class="contact-info">
+                                <span class="contact-type">{{ method.type }}</span>
+                                <span class="contact-value">{{ method.value }}</span>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="col-md-1 col-3"></div>
+
+                }
+            </div>
+
+        </ul>
+
+    </div>
+    <!-- <div class="col-11"></div> -->
 </div>
+
+
+
+<!-- </div>
+</div> -->
