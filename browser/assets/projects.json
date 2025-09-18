@@ -1,0 +1,53 @@
+[
+  {
+    "categoryName": "Data Science",
+    "categoryId": "data-science",
+    "iconClass": "bi-graph-up",
+    "projects": [
+      {
+        "title": "User Churn Rate for a Phone Company",
+        "description": "Analyzed customer churn rates to identify key factors contributing to contract cancellation and developed unbalanced classification models to predict the likelihood of individual customer churn.",
+        "technologies": ["Pandas", "Seaborn", "XGBoost", "TensorFlow"],
+        "imageUrl": "assets/project-churn.png"
+      },
+      {
+        "title": "Predictive Maintenance Model",
+        "description": "Built a model to predict equipment failure based on sensor data, helping to schedule maintenance proactively and reduce downtime.",
+        "technologies": ["Scikit-learn", "NumPy", "Matplotlib", "Jupyter"],
+        "imageUrl": "assets/project-maintenance.png"
+      }
+    ]
+  },
+  {
+    "categoryName": "Web Development",
+    "categoryId": "web-development",
+     "iconClass": "bi-code-slash",
+    "projects": [
+      {
+        "title": "Automated Pay Statement Generator",
+        "description": "Engineered a complete Python Django web application that automated pay statement generation, resulting in a significant reduction of hundreds of annual man-hours.",
+        "technologies": ["Python", "Django", "PostgreSQL", "Docker"],
+        "imageUrl": "assets/project-django.png"
+      },
+      {
+        "title": "WordPress Site Migration to Docker",
+        "description": "Ensured seamless WordPress site migrations to Docker containers by effectively troubleshooting and resolving 100% of unexpected issues, improving deployment and scalability.",
+        "technologies": ["Docker", "WordPress", "PHP", "SQL"],
+        "imageUrl": "assets/project-docker.png"
+      }
+    ]
+  },
+  {
+    "categoryName": "Automation",
+    "categoryId": "automation",
+    "iconClass": "bi-gear-fill",
+    "projects": [
+      {
+        "title": "Database Management Scripts",
+        "description": "Streamlined database management by developing Python (Pandas) automation scripts, saving substantial man-hours and enriching the company's service offerings.",
+        "technologies": ["Python", "Pandas", "SQL"],
+        "imageUrl": "assets/project-automation.png"
+      }
+    ]
+  }
+]
