@@ -1,0 +1,125 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -85px; /* Pulls the photo up to sit halfway outside the card */
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #2c3e50; /* Border using your logo's main blue */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  
+  /* --- Photo Animation --- */
+  animation: popIn 0.8s ease-out forwards;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.title {
+  /* font-weight: 700; */
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #87b0e2; /* Lighter version of your brand blue */
+}
+
+
+.bio-text p {
+  line-height: 1.1;
+  font-size: 1rem;
+  color: #c1d2e7;
+}
+
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+/* New wrapper style */
+.about-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Adjust the content card to make space for the photo */
+.content-card {
+  /* This top padding pushes the text content down below the photo */
+  padding-top: 85px; 
+}
+
+/* Update photo-wrapper to use absolute positioning */
+.photo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the photo */
+  margin-top: -75px; /* Pulls the photo up */
+  z-index: 10; /* Ensures the photo is on top of the card */
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  /* ... rest of your profile-photo styles are the same ... */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #2c3e50; /* Match the card's background */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  animation: popIn 0.8s ease-out forwards;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  80% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* All other text styles (.title, .subtitle, etc.) remain the same */
+.text-content {
+  /* Styles for the text inside the card */
+}
+
+@media (max-width: 767.98px) {
+
+  .photo-wrapper {
+    margin-top: -40px ;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+ 
+}

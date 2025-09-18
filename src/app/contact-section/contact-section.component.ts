@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import contactData from '../../assets/contact.json'
 
 @Component({
   selector: 'app-contact-section',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact-section.component.css'
 })
 export class ContactSectionComponent {
+
+  public contactMethods = contactData;
 
 }

@@ -1,12 +1,12 @@
 <div class="menu-container">
-  <div class="btn-group-vertical d-flex flex-column align-items-center" role="group" aria-label="Main menu">
-    <a (click)="onItemSelect()" class="btn custom-menu-btn" routerLink="/about" routerLinkActive="active-btn">
+  <div class="btn-group-vertical d-flex flex-column align-items-center h-50" role="group" aria-label="Main menu">
+    <a (click)="onItemSelect('about')" class="btn custom-menu-btn" routerLink="/about" routerLinkActive="active-btn">
       <i class="bi bi-info-circle"></i> About Me
     </a>
-    <a (click)="onItemSelect()" class="btn custom-menu-btn" routerLink="/projects" routerLinkActive="active-btn">
+    <a (click)="onItemSelect('projects')" class="btn custom-menu-btn" routerLink="/projects" routerLinkActive="active-btn">
       <i class="bi bi-journal-code"></i> Projects
     </a>
-    <a (click)="onItemSelect()" class="btn custom-menu-btn" routerLink="/contact" routerLinkActive="active-btn">
+    <a (click)="onItemSelect('contact')" class="btn custom-menu-btn" routerLink="/contact" routerLinkActive="active-btn">
       <i class="bi bi-send"></i> Contact Me
     </a>
   </div>

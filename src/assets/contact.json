@@ -1,0 +1,32 @@
+[
+  {
+    "iconClass": "bi-linkedin",
+    "type": "LinkedIn",
+    "value": "sebastian-leon-ds",
+    "url": "https://linkedin.com/in/sebastian-leon-ds"
+  },
+  {
+    "iconClass": "bi-github",
+    "type": "GitHub",
+    "value": "devleonfull",
+    "url": "https://github.com/devleonfull"
+  },
+  {
+    "iconClass": "bi-envelope-fill",
+    "type": "Email",
+    "value": "devleonfull@gmail.com",
+    "url": "mailto:devleonfull@gmail.com"
+  },
+  {
+    "iconClass": "bi-telephone-fill",
+    "type": "Phone",
+    "value": "+1 (365) 883-1090",
+    "url": "tel:+13658831090"
+  },
+  {
+    "iconClass": "bi-geo-alt-fill",
+    "type": "Location",
+    "value": "Ottawa, Canada",
+    "url": null
+  }
+]

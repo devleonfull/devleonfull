@@ -1,0 +1,7 @@
+.footer-desktop {
+  z-index: 1030; /* Keeps it above other elements */
+}
+
+.footer-mobile {
+  position: relative;
+}

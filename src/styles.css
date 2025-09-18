@@ -1,5 +1,11 @@
+:root {
+  --bs-primary: #518ACD; 
+  --bs-primary-rgb:  81, 138, 205;;  /* Main Blue from logo */
+  --bs-secondary: #87b0e2; /* A lighter, desaturated version of your main blue */
+}
+
 .logo {
-  width: 100px;
+  width: 200px; 
   height: auto;
 }
 
@@ -11,4 +17,58 @@ html, body {
 /* Override the Bootstrap variable for all buttons */
 .btn {
   --bs-btn-font-family: 'Arima', sans-serif;
+}
+
+/* Add this new shared class for all your content cards */
+.content-card {
+  width: 100%;
+  max-width: 800px;
+  height: 70vh; /* Set a consistent viewport height for all cards */
+  max-height: 800px; /* Set a maximum pixel height */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 15px;
+  
+  /* Background and Shadow Styles */
+  background-color: #518bcd;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 20px 20px;
+  border: 1px solid rgba(78, 129, 119, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+  /* This will add a scrollbar if the content inside is too tall */
+  overflow-y: auto;
+  
+  color: #ecf0f1;
+}
+
+/* Optional: Style the new scrollbar */
+.content-card::-webkit-scrollbar {
+  width: 8px;
+}
+.content-card::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+.content-card::-webkit-scrollbar-thumb {
+  background-color: #518ACD;
+  border-radius: 10px;
+  border: 2px solid #2c3e50;
+}
+
+
+@media (max-width: 767.98px) {
+  :host {
+    padding: 2rem; /* Reduce padding on the host for mobile */
+  }
+  .content-card {
+    margin-top: 2rem;
+  }
+
+  .photo-wrapper {
+    margin-top: 0px ;
+  }
+
+ 
 }

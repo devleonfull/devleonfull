@@ -1,1 +1,39 @@
-<p>projects-section works!</p>
+<div id="projects" class="content-card animate__animated animate__fadeIn">
+
+  <nav class="category-nav">
+    @for (category of categories; track category.categoryId) {
+    <a (click)="scrollToCategory(category.categoryId)" [class.active]="activeCategory() === category.categoryId"
+      [attr.aria-label]="category.categoryName">
+
+      <i class="bi {{ category.iconClass }} d-md-none"></i>
+
+      <span class="d-none d-md-inline">{{ category.categoryName }}</span>
+    </a>
+    }
+  </nav>
+
+  <div class="projects-container" #projectsContainer>
+    @for (category of categories; track category.categoryId) {
+    <section #categorySection [id]="category.categoryId" class="category-section">
+      <h2 class="category-title">{{ category.categoryName }}</h2>
+      <div class="projects-grid">
+        @for (project of category.projects; track project.title) {
+        <div class="project-item">
+          <div class="project-content">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-tags">
+              @for (tech of project.technologies; track tech) {
+              <span class="tag">{{ tech }}</span>
+              }
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </section>
+    }
+    <div class="scroll-padding"></div>
+  </div>
+
+</div>

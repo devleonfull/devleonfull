@@ -1,1 +1,22 @@
-<p>contact-section works!</p>
+<div id="contact" class="content-card animate__animated animate__fadeIn">
+  <div class="card-content text-center">
+    
+    <h1 class="title">Get In Touch</h1>
+    <p class="subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+    
+    <ul class="contact-list list-unstyled mt-4">
+      @for (method of contactMethods; track method.type) {
+        <li class="contact-item">
+          <a [href]="method.url" target="_blank" [class.no-link]="!method.url">
+            <i class="bi {{ method.iconClass }}"></i>
+            <div class="contact-info">
+              <span class="contact-type">{{ method.type }}</span>
+              <span class="contact-value">{{ method.value }}</span>
+            </div>
+          </a>
+        </li>
+      }
+    </ul>
+
+  </div>
+</div>

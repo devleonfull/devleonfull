@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import aboutData from '../../assets/about-me.json';
 
 @Component({
   selector: 'app-about-me-section',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './about-me-section.component.css'
 })
 export class AboutMeSectionComponent {
-
+ public data = aboutData;
 }

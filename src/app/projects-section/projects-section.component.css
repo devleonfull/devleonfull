@@ -1,0 +1,198 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+.projects-card {
+  width: 100%;
+  max-width: 900px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 2.5rem;
+  border-radius: 15px;
+  background-color: #3d81bc; /* A dark slate blue as a fallback */
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 20px 20px;
+  
+  /* --- Floating Shadow Effect --- */
+  border: 1px solid rgba(78, 129, 119, 0.3); /* Subtle border using your logo's green-blue */
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.2),  /* Main shadow */
+    0 6px 6px rgba(0, 0, 0, 0.23); /* Near shadow for depth */
+
+  color: #ecf0f1; /* Light text for readability */
+}
+
+/* --- Category Navigation --- */
+.category-nav {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(78, 129, 119, 0.3);
+}
+
+.category-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  color: #bdc3c7;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.category-nav a.active {
+  /* size:100%; */
+  background-color: #518ACD;
+  color: white;
+  font-weight: bold;
+}
+
+/* --- Projects Container --- */
+.projects-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.category-section {
+  margin-top: 3rem;
+}
+
+.category-title {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  /* border-left: 4px solid #518ACD; */
+  /* padding-left: 1rem; */
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* --- Individual Project Item --- */
+.project-item {
+  background: rgba(169, 202, 255, 0.24);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.project-description {
+  color:  #c1d2e7;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-size: 1;
+}
+
+.project-tags .tag {
+  display: inline-block;
+  background-color: #4e81779a;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.scroll-padding {
+  height: 50vh;
+}
+
+/* --- Custom Scrollbars --- */
+.projects-container::-webkit-scrollbar,
+.category-nav::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.projects-container::-webkit-scrollbar-track,
+.category-nav::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.projects-container::-webkit-scrollbar-thumb,
+.category-nav::-webkit-scrollbar-thumb {
+  background-color: #518ACD;
+  border-radius: 5px;
+  /* padding: 10rem; */
+  border: 1px solid #d0d2d57a;
+}
+/* --- Main Card --- */
+.projects-card {
+  width: 100%;
+  max-width: 900px;
+  /* Use max-height and a flexible height for better responsiveness */
+  height: 85vh;
+  max-height: 700px; 
+  display: flex;
+  /* ... rest of the styles are the same */
+}
+
+/* --- Category Navigation on Mobile --- */
+.category-nav a {
+  /* ... existing styles ... */
+  min-width: 50px; /* Give icon buttons a consistent size */
+  font-size: 1rem; /* Make icons larger on mobile */
+  padding: 1rem;
+}
+
+/* --- General Mobile Adjustments (for screens smaller than 768px) --- */
+@media (max-width: 767.98px) {
+  :host {
+    padding: 1rem; /* Reduce padding on the host for mobile */
+  }
+
+  .projects-card {
+    padding: 1rem; /*Reduce card padding*/
+    height: 90vh; /* Allow the card to take up more vertical space */
+  }
+
+  .category-nav {
+    justify-content: center; /* Center the icons in the nav bar */
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .project-item {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+}
