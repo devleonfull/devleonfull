@@ -18,11 +18,15 @@ export class AppComponent implements OnInit {
   isMenuClicked = signal(false); // New signal for menu state
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  isHomeClicked() {
+    this.isMenuClicked.set(false);
+    this.router.navigate(['/'])
+  }
   scrollToCategory(categoryId: string): void {
     const element = document.getElementById(categoryId);
     element?.scrollIntoView({ behavior: 'smooth', block: 'center' });

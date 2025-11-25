@@ -18,17 +18,19 @@
       <h2 class="category-title text-center">{{ category.categoryName }}</h2>
       <div class="projects-grid">
         @for (project of category.projects; track project.title) {
-        <div class="project-item">
-          <div class="project-content">
-            <h3 class="project-title">{{ project.title }}</h3>
-            <p class="project-description">{{ project.description }}</p>
-            <div class="project-tags">
-              @for (tech of project.technologies; track tech) {
-              <span class="tag">{{ tech }}</span>
-              }
+        <a [href]=project.projectUrl target="_blank">
+          <div class="project-item">
+            <div class="project-content">
+              <h3 class="project-title">{{ project.title }}</h3>
+              <p class="project-description">{{ project.description }}</p>
+              <div class="project-tags">
+                @for (tech of project.technologies; track tech) {
+                <span class="tag">{{ tech }}</span>
+                }
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         }
       </div>
     </section>

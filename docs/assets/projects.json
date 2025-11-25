@@ -1,52 +1,162 @@
 [
   {
-    "categoryName": "Data Science",
-    "categoryId": "data-science",
-    "iconClass": "bi-graph-up",
+    "categoryName": "Strategic Data Analysis & Business Intelligence",
+    "categoryId": "data-analytics",
+    "iconClass": "bi-bar-chart-fill",
     "projects": [
       {
-        "title": "User Churn Rate for a Phone Company",
-        "description": "Analyzed customer churn rates to identify key factors contributing to contract cancellation and developed unbalanced classification models to predict the likelihood of individual customer churn.",
-        "technologies": ["Pandas", "Seaborn", "XGBoost", "TensorFlow"],
-        "imageUrl": "assets/project-churn.png"
+        "title": "Telecom Revenue Optimization (Megaline)",
+        "description": "Conducted statistical hypothesis testing to compare revenue streams between prepaid plans. Performed comprehensive data cleaning and merged multiple datasets to provide evidence-based recommendations for advertising budget allocation.",
+        "technologies": [
+          "Python",
+          "Pandas",
+          "SciPy",
+          "Seaborn",
+          "Statistical Analysis"
+        ],
+        "imageUrl": "assets/project-megaline.png",
+        "projectUrl": "https://github.com/devleonfull/megaline"
       },
       {
-        "title": "Predictive Maintenance Model",
-        "description": "Built a model to predict equipment failure based on sensor data, helping to schedule maintenance proactively and reduce downtime.",
-        "technologies": ["Scikit-learn", "NumPy", "Matplotlib", "Jupyter"],
-        "imageUrl": "assets/project-maintenance.png"
+        "title": "Video Game Market Analysis",
+        "description": "Analyzed historical sales data to identify patterns determining game success. Modeled platform lifecycles and user profiles by region to guide marketing strategies and spot potential big-hitters for the upcoming year.",
+        "technologies": [
+          "Python",
+          "Pandas",
+          "Matplotlib",
+          "Hypothesis Testing",
+          "Data Visualization"
+        ],
+        "imageUrl": "assets/project-games.png",
+        "projectUrl": "https://github.com/devleonfull/video_game_sales"
+      },
+      {
+        "title": "Instacart Shopping Behavior Analysis",
+        "description": "Performed rigorous data preprocessing on raw transactional data to resolve missing values and duplicates. Analyzed purchasing habits to uncover peak order times and department preferences, ensuring data accuracy for downstream insights.",
+        "technologies": [
+          "Python",
+          "Pandas",
+          "Data Cleaning",
+          "EDA",
+          "Matplotlib"
+        ],
+        "imageUrl": "assets/project-instacart.png",
+        "projectUrl": "https://github.com/devleonfull/instacart_analysis"
+      },
+      {
+        "title": "Music Streaming Preferences",
+        "description": "Tested hypotheses regarding user listening behavior across different cities (Springfield vs. Shelbyville). Cleaned and compared datasets to validate assumptions about activity during peak business hours.",
+        "technologies": [
+          "Python",
+          "Pandas",
+          "Logic & Reasoning",
+          "Data Formatting"
+        ],
+        "imageUrl": "assets/project-music.png",
+        "projectUrl": "https://github.com/devleonfull/music_app_basic_analysis"
       }
     ]
   },
   {
-    "categoryName": "Web Development",
-    "categoryId": "web-development",
-     "iconClass": "bi-code-slash",
+    "categoryName": "Predictive Modeling & Risk Assessment",
+    "categoryId": "predictive-modeling",
+    "iconClass": "bi-cpu-fill",
     "projects": [
       {
-        "title": "Automated Pay Statement Generator",
-        "description": "Engineered a complete Python Django web application that automated pay statement generation, resulting in a significant reduction of hundreds of annual man-hours.",
-        "technologies": ["Python", "Django", "PostgreSQL", "Docker"],
-        "imageUrl": "assets/project-django.png"
+        "title": "Churn Prediction System (Interconnect)",
+        "description": "Engineered a robust machine learning pipeline using XGBoost to predict user turnover, enabling the marketing team to identify at-risk customers with high precision and reduce contract cancellations.",
+        "technologies": [
+          "Python",
+          "XGBoost",
+          "SQL",
+          "Pandas",
+          "ROC-AUC Optimization"
+        ],
+        "imageUrl": "assets/project-churn.png",
+        "projectUrl": "https://github.com/devleonfull/interconnect"
       },
       {
-        "title": "WordPress Site Migration to Docker",
-        "description": "Ensured seamless WordPress site migrations to Docker containers by effectively troubleshooting and resolving 100% of unexpected issues, improving deployment and scalability.",
-        "technologies": ["Docker", "WordPress", "PHP", "SQL"],
-        "imageUrl": "assets/project-docker.png"
+        "title": "Bank Customer Retention (BetaBank)",
+        "description": "Analyzed banking behavior to predict churn risks. Addressed data quality issues by handling class imbalance with SMOTE and upsampling. Achieved high predictive accuracy (F1-score) to support customer retention programs.",
+        "technologies": [
+          "Python",
+          "Pandas",
+          "Random Forest",
+          "SMOTE",
+          "Scikit-learn"
+        ],
+        "imageUrl": "assets/project-betabank.png",
+        "projectUrl": "https://github.com/devleonfull/betabank_case"
+      },
+      {
+        "title": "Oil Well Profit & Risk Analysis (OilyGiant)",
+        "description": "Developed a linear regression model to predict the volume of oil reserves in new wells. Implemented Bootstrapping techniques to analyze profit distribution and calculate the risk of loss, identifying the most profitable region for development.",
+        "technologies": [
+          "Python",
+          "Scikit-learn",
+          "Bootstrapping",
+          "Risk Analysis",
+          "Linear Regression"
+        ],
+        "imageUrl": "assets/project-oil.png",
+        "projectUrl": "https://github.com/devleonfull/oil_extraction_prediction_model"
+      },
+      {
+        "title": "Foundations of Machine Learning",
+        "description": "Implemented core machine learning algorithms from scratch to understand their mathematical underpinnings. Demonstrated strong aptitude in logic and math by applying various classification and regression techniques to standard datasets.",
+        "technologies": [
+          "Python",
+          "Scikit-learn",
+          "Algorithm Design",
+          "Mathematics",
+          "Model Tuning"
+        ],
+        "imageUrl": "assets/project-ml-basic.png",
+        "projectUrl": "https://github.com/devleonfull/basic_ml_algorithms"
       }
     ]
   },
   {
-    "categoryName": "Automation",
-    "categoryId": "automation",
+    "categoryName": "Data Engineering & Automation Systems",
+    "categoryId": "data-engineering",
     "iconClass": "bi-gear-fill",
     "projects": [
       {
-        "title": "Database Management Scripts",
-        "description": "Streamlined database management by developing Python (Pandas) automation scripts, saving substantial man-hours and enriching the company's service offerings.",
-        "technologies": ["Python", "Pandas", "SQL"],
-        "imageUrl": "assets/project-automation.png"
+        "title": "Interactive Sales Dashboard (Streamlit)",
+        "description": "Designed and deployed a web-based data dashboard using Streamlit and Plotly Express. Allows stakeholders to visualize car sales trends interactively, fulfilling business needs for accessible, real-time data presentation.",
+        "technologies": [
+          "Python",
+          "Streamlit",
+          "Plotly Express",
+          "Pandas",
+          "Web Deployment"
+        ],
+        "imageUrl": "assets/project-streamlit.png",
+        "projectUrl": "https://github.com/devleonfull/streamlit-project"
+      },
+      {
+        "title": "Automated Reporting System (Django)",
+        "description": "Built a scalable solution to generate and distribute PDF reports automatically using Python and Django. Optimized operational costs by 30% and improved data availability for internal business units.",
+        "technologies": [
+          "Python",
+          "Django",
+          "PostgreSQL",
+          "Automated Reporting"
+        ],
+        "imageUrl": "assets/project-django.png",
+        "projectUrl": "#"
+      },
+      {
+        "title": "SQL Data Integrity & Migration",
+        "description": "Streamlined database population by developing automatic insertion scripts to reduce manual data entry. Executed complex SQL queries and managed migrations ensuring 100% data integrity during platform transitions.",
+        "technologies": [
+          "Python",
+          "SQL",
+          "Pandas",
+          "ETL"
+        ],
+        "imageUrl": "assets/project-scripts.png",
+        "projectUrl": "#"
       }
     ]
   }

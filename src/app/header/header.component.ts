@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterModule } from '@angular/router'
 
 @Component({
@@ -8,5 +8,9 @@ import { RouterModule } from '@angular/router'
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  @Output() homePressed = new EventEmitter<boolean>();
 
+  onReturnHome() {
+    this.homePressed.emit(true)
+  }
 }

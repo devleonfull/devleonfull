@@ -1,6 +1,6 @@
 <div class="d-flex flex-column min-vh-100">
   @if (!isMenuClicked()) {
-  <app-header></app-header>
+  <app-header (homePressed)="isHomeClicked()"></app-header>
   }
 
   <!-- Main content -->
@@ -19,7 +19,7 @@
             <div class="row">
               <div class="col p-3">
                 @if (isMenuClicked()) {
-                <app-header></app-header>
+                <app-header (homePressed)="isHomeClicked()"></app-header>
                 }
               </div>
             </div>

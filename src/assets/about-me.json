@@ -3,8 +3,9 @@
   "title": "Hello, I'm Sebastian Leon",
   "subtitle": "Data Science Graduate & Full-Stack Developer",
   "paragraphs": [
-    "I am a technically versatile data science graduate with skills in Python, including Pandas, NumPy, and TensorFlow, as well as SQL and data visualization. My background includes over a year of full-stack web development and more than 200 hours of experience teaching Python and SQL. ",
-    "In my previous roles, I engineered a complete Django web application to automate pay statement generation, saving hundreds of annual man-hours. Additionally, I have experience optimizing cloud computing costs by 30% and developing Python automation scripts to streamline database management.",
-    "I am passionate about contributing to data-driven solutions and challenging projects, combining rapid skill acquisition with strong communication. My experience includes developing and authoring educational content and conducting over 150 hours of live instruction in Python and SQL. "
+    "I am an Applied Data Scientist and Full-Stack Developer who blends rigorous engineering with creative problem-solving. Currently dedicated to advancing my education, I bring a strong foundation of experience as Full-stack web developer and Data Scientist/Analyst.",
+    "My expertise in Data Science, honed through intensive bootcamp training and dedicated self-study, centers on predictive modeling. I have engineered robust machine learning pipelines (SciKit-learn,  Numpy, XGBoost, TensorFlow ...) to train, evaluate, optimize, and deploy complex models, solving critical problems in the fintech and telecommunications sectors.",
+    "In the realm of Data Analytics, I am passionate about transforming raw numbers into clear, actionable narratives. I leverage Power BI as a core dashboarding technology, utilizing it alongside Python libraries like Seaborn and Matplotlib to design intuitive visualizations that reveal key trends.",
+    "As a Web Developer, I build systems that drive efficiency. My practical experience is rooted in developing full-stack solutions with Django and Python, where I engineered automated reporting tools and streamlined database ingestion using custom scripts."
   ]
 }

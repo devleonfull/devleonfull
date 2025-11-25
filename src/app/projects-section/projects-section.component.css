@@ -6,6 +6,11 @@
   height: 100%;
 }
 
+
+a {
+  text-decoration: none;
+}
+
 .projects-card {
   width: 100%;
   max-width: 900px;
@@ -14,25 +19,30 @@
   flex-direction: column;
   padding: 2.5rem 2.5rem;
   border-radius: 15px;
-  background-color: #3d81bc; /* A dark slate blue as a fallback */
-  background-image: 
+  background-color: #3d81bc;
+  /* A dark slate blue as a fallback */
+  background-image:
     radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
   background-size: 20px 20px;
-  
-  /* --- Floating Shadow Effect --- */
-  border: 1px solid rgba(78, 129, 119, 0.3); /* Subtle border using your logo's green-blue */
-  box-shadow: 
-    0 10px 20px rgba(0, 0, 0, 0.2),  /* Main shadow */
-    0 6px 6px rgba(0, 0, 0, 0.23); /* Near shadow for depth */
 
-  color: #ecf0f1; /* Light text for readability */
+  /* --- Floating Shadow Effect --- */
+  border: 1px solid rgba(78, 129, 119, 0.3);
+  /* Subtle border using your logo's green-blue */
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    /* Main shadow */
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  /* Near shadow for depth */
+
+  color: #ecf0f1;
+  /* Light text for readability */
 }
 
 /* --- Category Navigation --- */
 .category-nav {
   display: flex;
   overflow-x: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(78, 129, 119, 0.3);
 }
@@ -106,7 +116,7 @@
 }
 
 .project-description {
-  color:  #c1d2e7;
+  color: #c1d2e7;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   font-size: 1;
@@ -145,13 +155,14 @@
   /* padding: 10rem; */
   border: 1px solid #d0d2d57a;
 }
+
 /* --- Main Card --- */
 .projects-card {
   width: 100%;
   max-width: 900px;
   /* Use max-height and a flexible height for better responsiveness */
   height: 85vh;
-  max-height: 700px; 
+  max-height: 700px;
   display: flex;
   /* ... rest of the styles are the same */
 }
@@ -159,24 +170,30 @@
 /* --- Category Navigation on Mobile --- */
 .category-nav a {
   /* ... existing styles ... */
-  min-width: 50px; /* Give icon buttons a consistent size */
-  font-size: 1rem; /* Make icons larger on mobile */
+  min-width: 50px;
+  /* Give icon buttons a consistent size */
+  font-size: 1rem;
+  /* Make icons larger on mobile */
   padding: 1rem;
 }
 
 /* --- General Mobile Adjustments (for screens smaller than 768px) --- */
 @media (max-width: 767.98px) {
   :host {
-    padding: 1rem; /* Reduce padding on the host for mobile */
+    padding: 1rem;
+    /* Reduce padding on the host for mobile */
   }
 
   .projects-card {
-    padding: 1rem; /*Reduce card padding*/
-    height: 90vh; /* Allow the card to take up more vertical space */
+    padding: 1rem;
+    /*Reduce card padding*/
+    height: 90vh;
+    /* Allow the card to take up more vertical space */
   }
 
   .category-nav {
-    justify-content: center; /* Center the icons in the nav bar */
+    justify-content: center;
+    /* Center the icons in the nav bar */
   }
 
   .category-title {
